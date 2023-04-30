@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>faq</title>
+        <link rel="stylesheet" href="faq.css">
+    </head>
+    <body>
+        <div class="faq-box">
+        <h1>
+           <b> FREQUENTLY ASKED QUESTIONS(FAQ)</b>
+          </h1>
+          </div>     
+        <div class="faq">
+            <h2 class="question">1. How do I create an account?</h2>
+            <p class="answer">To create an account, click on the <b>"Sign Up"</b> button on the top right corner of the website. You will be asked to provide some basic information such as your name, email address, and password.</p>
+            <br>
+
+            <h2 class="question">2. How do I search for jobs?</h2>
+            <p class="answer">You can search for jobs by entering keywords related to the job you are looking for in the search bar on the website. You can also filter your search results by location, job type, salary, and more.</p>
+            <br>
+
+            <h2 class="question">3. How do I apply for a job?</h2>
+            <p class="answer"> To apply for a job, click on the <b>"Apply Now"</b>button on the job listing page. You will be asked to provide your resume and cover letter, as well as answer some job-specific questions if applicable.</p>
+<br>
+
+            <h2 class="question">4. How can I edit or update my profile information?</h2>
+            <p class="answer">You can edit or update your profile information by logging into your account and clicking on the <b>"Edit Profile"</b> button.</p>
+            <br>
+
+            <h2 class="question">5. How can I upload my resume?</h2>
+            <p class="answer">You can upload your resume by clicking on the "CV MAKER"button on your profile page, it will automatically make your resume and upload  it wherever you want.</p>
+<br>
+
+            <h2 class="question">6. Can I apply for multiple jobs at once?</h2>
+            <p class="answer">Yes, you can apply for multiple jobs at once.</p>
+            <br>
+
+            <h2 class="question">7. How do I know if my application has been received?</h2>
+            <p class="answer">You will receive a confirmation email once your application has been received.</p>
+<br>
+
+            <h2 class="question">8. What happens after I apply for a job?</h2>
+            <p class="answer">After you apply for a job, the employer or recruiter will review your application and contact you if they are interested in scheduling an interview or moving forward with the hiring process.</p>
+            <br>
+
+            <h2 class="question">9. How can I track the status of my application?</h2>
+            <p class="answer">You can track the status of your application by logging into your account and checking the status of your job applications.</p>
+<br>
+
+            <h2 class="question">10. What should I do if I encounter technical difficulties while applying for a job?</h2>
+            <p class="answer">If you encounter technical difficulties while applying for a job, you can contact customer support for assistance.</p>
+            <br>
+
+            <h2 class="question">11. How can I delete my account?</h2>
+            <p class="answer">You can delete your account by logging into your account and clicking on the "Delete Account" button.</p>
+<br>
+
+            <h2 class="question">12. What is the best way to prepare for a job interview?</h2>
+            <p class="answer">The best way to prepare for a job interview is to research the company and the job position, practice common interview questions, and dress professionally.</p>
+            <br>
+
+            <h2 class="question">13. Is there any facilities for off-campus placement?</h2>
+            <p class="answer">Yes, we provide facilities for both on-campus as well as off-campus placement for our users. We have two different section one is off-campus and one on-campus, you can choose accordingly.</p>
+<br>
+
+            <h2 class="question">14. Can I get job alerts for new job postings?</h2>
+            <p class="answer">Yes, you will receive notifications for new job postings that match your search criteria.Also we have many feature that will make your work easy like, we have one feature that will help you to manage your time properly.</p>
+            <br>
+                         
+            <h2 class="question">15. How can I contact the employer or recruiter if I have any questions?</h2>
+            <p class="answer">You can contact the employer or recruiter by clicking on the <b>"Contact"</b> button on the job listing page or by emailing the provided contact information.</p>
+          </div>
+   
+<script>
+            const questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+
+    if (answer.classList.contains('show')) {
+      answer.classList.remove('show');
+    } else {
+      answer.classList.add('show');
+    }
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === '^') {
+    const activeElement = document.activeElement;
+
+    if (activeElement.classList.contains('question')) {
+      const answer = activeElement.nextElementSibling;
+
+      if (answer.classList.contains('show')) {
+        answer.classList.remove('show');
+      } else {
+        answer.classList.add('show');
+      }
+    }
+  }
+});
+
+</script>
+   
+  </body>
+  </html>
+  

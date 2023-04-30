@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>past</title>
+        <link rel="stylesheet" href="faq.css">
+    </head>
+    <body>
+        <div class="faq-box">
+        <h1 class="p">
+            <b>Past Experiences</b>
+          </h1>
+          </div>     
+        <div class="faq">
+            <h2 class="question">1. What were some of the most valuable skills or lessons you learned while you were a student?</h2>
+            <p class="answer">"Some of the most valuable skills and lessons I learned while at Nirma University include time management, teamwork, and communication. The workload was demanding, but it taught me how to prioritize tasks and manage my time effectively. I also had the opportunity to work on group projects, which helped me develop my collaboration and leadership skills. Additionally, I learned how to communicate complex ideas and research findings effectively, both in writing and in presentations.<br>
+-Sheshang Patel"</p>
+<br>
+            <h2 class="question">2. Can you tell me about your job search process after graduation?</h2>
+            <p class="answer">"My job search process after graduation was challenging, but ultimately rewarding. I started by networking with alumni and professionals in my field, attending job fairs, and searching online job boards there I come to know about TalentScout, it is very helpful and make our work easy.We can apply for any company also it has many features like CV Maker, community forum where we can connect with our alumini. TaalentScout help me to land my first job.<br>
+-Arunima barik</p>
+            <br>
+            <h2 class="question">3. Were there any specific career resources or services offered by Nirma University that you found particularly helpful in your job search?</h2>
+            <p class="answer">Yes, there were several career resources and services offered by Nirma University that were particularly helpful in my job search. One was the career services office, which provided me with guidance and support throughout the job search process. They helped me fine-tune my resume and cover letter, and provided me with access to job listings and networking events. Another resource was the alumni network, which I tapped into for informational interviews and job leads. Finally, I found that the school's reputation and network of industry connections were helpful in opening doors and getting my foot in the door with potential employers.<br>-Kavi Shah</p>
+            <br>
+            <h2 class="question">4. Can you share any advice or tips for current students looking to maximize their chances of getting a job after graduation?</h2>
+            <p class="answer">My advice to current students looking to maximize their chances of getting a job after graduation would be to start early, network extensively, and be persistent in their job search. It's important to take advantage of the career resources and services offered by [Name of the School], as well as to seek out opportunities for internships, volunteer work, or other experiences that can help build skills and connections in their field. Additionally, it's important to be proactive in networking and reaching out to alumni and professionals in their field, as these connections can be valuable in opening doors and providing insights and advice. Finally, it's important to stay positive and persistent in the face of rejection or setbacks, and to keep honing their skills and building their portfolio to stand out among other candidates.<br>-Gaurav Golchha</p>
+            <br>
+            <h2 class="s"><u>Some mentionable links</u> </h2>
+            <br>
+            <h2 class="question">1. How to build a powerful resume?</h2>
+            <p class="answer"><a href="https://www.youtube.com/watch?v=YA400nwQhLE" target="_blank">Resume Building</a></p>
+            <br>
+            <h2 class="question">2. How my confidence will be at boost during the interview round?</h2>
+            <p class="answer"><a href="https://www.youtube.com/watch?v=lKCTS9dY4h4" target="_blank">Confidence Building</a></p>
+            <br>
+        </div>
+   
+        <script>
+                    const questions = document.querySelectorAll('.question');
+        
+        questions.forEach(question => {
+          question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+        
+            if (answer.classList.contains('show')) {
+              answer.classList.remove('show');
+            } else {
+              answer.classList.add('show');
+            }
+          });
+        });
+        
+        document.addEventListener('keydown', (event) => {
+          if (event.key === '^') {
+            const activeElement = document.activeElement;
+        
+            if (activeElement.classList.contains('question')) {
+              const answer = activeElement.nextElementSibling;
+        
+              if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+              } else {
+                answer.classList.add('show');
+              }
+            }
+          }
+        });
+        
+        </script>
+           

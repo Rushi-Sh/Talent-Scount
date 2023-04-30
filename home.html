@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation bar -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl text-white font-bold">Logo</a>
+                <div class="flex items-center">
+                    <a href="#" class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#"
+                        class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+                    <a href="#"
+                        class="text-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <div class="container mx-auto my-10 px-4">
+        <h1 class="text-3xl font-medium text-gray-800 mb-6">User Profile</h1>
+        <div class="bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+            <div class="grid grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2" for="full_name">Full Name:</label>
+                    <input class="border rounded-lg px-3 py-2 w-full" id="full_name" type="text" value="John Doe">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2" for="email">Email:</label>
+                    <input class="border rounded-lg px-3 py-2 w-full" id="email" type="email" value="johndoe@example.com">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6 mt-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2" for="registration_id">Registration ID:</label>
+                    <input class="border rounded-lg px-3 py-2 w-full" id="registration_id" type="text" value="123456">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2" for="grades">Grades:</label>
+                    <input class="border rounded-lg px-3 py-2 w-full" id="grades" type="text" value="A+">
+                </div>
+            </div>
+            <div class="mt-4">
+                <label class="block text-gray-700 font-medium mb-2" for="college_details">College Details:</label>
+                <textarea class="border rounded-lg px-3 py-2 w-full" id="college_details" rows="3">ABC College, XYZ University</textarea>
+            </div>
+            <div class="mt-4">
+                <label class="block text-gray-700 font-medium mb-2" for="computer_science_skills">Computer Science
+                    Skills:</label>
+                <select class="border rounded-lg px-3 py-2 w-full" id="computer

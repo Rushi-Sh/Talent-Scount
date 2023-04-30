@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<TITLE> SWIGGY </TITLE>
+</HEAD>
+<BODY BGCOLOR = "#D2B4DE">
+<fORM>
+<CENTER>
+<H1>REGISTRATION FORM</H1>
+<LABEL FOR = "NAME">NAME:</LABEL><BR>
+<input type="text" id="name" name="name" PLACEHOLDER="YOUR NAME"><br>
+<LABEL FOR = "E-MAIL">E-MAIL:</LABEL><BR>
+<input type="text" id="E-MAIL" name="E-MAIL" PLACEHOLDER="PQR@GMAIL.COM"><br>
+<LABEL FOR = "AGE">AGE:</LABEL><BR>
+<input type="text" id="AGE" name="AGE" PLACEHOLDER="18+"><br>
+<label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<BR>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+</label><form action="send_email.py" method="POST">
+  <label for="sender_name">Your Name:</label>
+  <input type="text" id="sender_name" name="sender_name"><br><br>
+  
+  <label for="sender_email">Your Email:</label>
+  <input type="email" id="sender_email" name="sender_email"><br><br>
+  
+  <label for="recipient_email">Recipient's Email:</label>
+  <input type="email" id="recipient_email" name="recipient_email"><br><br>
+  
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject"><br><br>
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="10" cols="50"></textarea><br><br>
+  
+  <input type="submit" value="Send Email">
+</form>
+
+<BR>
+<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="sindhu bhavan road">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="ahmedabad">
+<BR>
+ <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="maitry gajjar">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+<div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</CENTER>
+</FORM>
+</BODY>
+</HTML>
